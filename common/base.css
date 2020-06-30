@@ -1,0 +1,223 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+header {
+	position: fixed;
+	width: 12%;
+	height: 100%;
+	float: left;
+	z-index: 5;
+	background-color: black;
+	padding: 0 0 0 30px;
+}
+
+.header_img {
+	padding: 20px 30px 20px 0;
+}
+
+.header_img img {
+	width: 80%;
+	padding-top: 20px;
+}
+
+.header_nav {
+	padding: 30px 0;
+	overflow: hidden;
+}
+
+.header_nav li {
+	width: 90%;
+	padding: 5% 0;
+	transform: translateX(-33px);
+}
+
+.header_nav li:last-of-type {
+	transform: translateX(0px);
+}
+
+.header_nav li::before {
+	content: "";
+	display: inline-block;
+	width: 25px;
+	height: 2px;
+	margin: 5px 8px 5px 0;
+	background-color: #fff;
+}
+
+.header_nav li:last-of-type::before {
+	display: none;
+}
+
+.header_nav li:hover {
+	transform: translateX(0px);
+	transition: all .3s;
+}
+
+.header_nav a {
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'renner';
+}
+
+.header_nav li:last-of-type a {
+	display: flex;
+	font-size: 16px;
+}
+
+#header_nav-border {
+	width: 30px;
+	height: 3px;
+	margin: 10px 5px;
+	background-color: #fff;
+	transition: all .3s;
+}
+
+.header_nav-twitter img {
+	width: 25px;
+}
+
+.right {
+	width: 88%;
+	float: right;
+}
+
+main {
+	display: flex;
+	height: 100%;
+	background: url(../image/main_bg.png);
+	background-attachment: fixed;
+	background-size: cover;
+	filter: brightness(115%) contrast(110%);
+}
+
+.main_title {
+	padding: 50px 0 0 50px;
+}
+
+.main_title {
+	width: 300px;
+}
+
+.main_content {
+	width: 100%;
+}
+
+.main_content-border {
+	width: 70%;
+	height: 100%;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+	margin: 70px 0 0 20px;
+}
+
+.main_content-imgBottom img {
+	position: absolute;
+	bottom: 1px;
+	right: 100px;
+	width: 140px;
+	filter: brightness(70%) contrast(100%);
+}
+
+footer {
+	position: relative;
+	z-index: 2;
+	height: 280px;
+	text-align: center;
+	background-color: #F6821E;
+}
+
+.footer_pagetop {
+	position: absolute;
+	top: -50px;
+	right: 20px;
+}
+
+.footer_pagetop img {
+	height: 100px;
+	padding-bottom: 40px;
+}
+
+.footer_pagetop p {
+	width: 80px;
+	transform: rotate(90deg);
+}
+
+.footer_pagetop a {
+	color: black;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.footer_img {
+	padding: 70px 0 40px;
+}
+
+.footer_txt {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#loadingBg {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9998;
+	width: auto;
+	min-width: 100%;
+	height: auto;
+	min-height: 100%;
+	background: black;
+}
+
+#loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 9998;
+	width: 400px;
+	padding: 50px 20px;
+	margin: -70px 0 0 -220px;
+}
+
+#loading #percent {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 9998;
+	margin-top: 110px;
+	color: aqua;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold
+}
+
+#gauge {
+	position: absolute;
+	top: 50%;
+	left: 45%;
+	z-index: 9999;
+	background: url(../image/lord01.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+#gauge img {
+	width: 50px;
+}
